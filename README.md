@@ -3,7 +3,7 @@
   <a href="https://chapa.co/" target="_blank">
     <img src="./docs/logo.png" width="320" alt="Nest Logo"/>
   </a>
-  <p align="center">NestJS sdk for chapa</p>
+  <p align="center">NestJS SDK for Chapa - Forked and Maintained by ShalOps</p>
 </div>
 </h1>
 
@@ -19,17 +19,39 @@
 
 ## Installation
 
-**NPM**
+Since this is a custom fork for internal usage, install directly from GitHub:
 
 ```bash
-$ npm i -s chapa-nestjs
+npm install github:ShalOps/chapa-nestjs\#main
 ```
-
-**Yarn**
-
+or
 ```bash
-$ yarn add chapa-nestjs
+yarn add github:ShalOps/chapa-nestjs\#main
 ```
+
+DO NOT install from npm registry as it may be outdated or incompatible.
+
+## Development & Maintenance
+
+For contributors and maintainers:
+
+- Clone the repo locally.
+- Run `npm install` to install dependencies.
+- Run `npm run build` to compile TypeScript.
+- Commit changes including compiled `dist` folder.
+- Push to `main` (or your working branch).
+
+To keep your main projects updated:
+
+- Update your `package.json` dependency to point to this GitHub repo.
+```json
+"dependencies": {
+  "chapa-nestjs": "github:ShalOps/chapa-nestjs#main"
+}
+```
+- Run `npm uninstall chapa-nestjs` to remove old versions.
+- Run `npm install` to install the latest fork package.
+- Run your tests to verify correctness.
 
 ## Getting started
 
@@ -354,6 +376,10 @@ When collecting a payment, you can override the default `split_type` and `split_
 - Github - [https://github.com/fireayehu](https://github.com/fireayehu)
 - Twitter - [https://twitter.com/Fireayehu](https://twitter.com/Fireayehu)
 - LinkedIn - [https://www.linkedin.com/in/fireayehu/](https://www.linkedin.com/in/fireayehu/)
+
+---
+
+Maintained by ShalOps | [GitHub Repo](https://github.com/ShalOps/chapa-nestjs)
 
 ## License
 
